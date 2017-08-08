@@ -1,0 +1,76 @@
+// Media queries
+@mixin screen-lg {
+	@media screen and (min-width: $screen-lg) {
+		@content;
+	}
+}
+@mixin screen-md {
+	@media screen and (min-width: $screen-md) {
+		@content;
+	}
+}
+
+@mixin screen-sm {
+	@media screen and (min-width: $screen-sm) {
+		@content;
+	}
+}
+
+@mixin screen-xs {
+	@media screen and (min-width: $screen-xs) {
+		@content;
+	}
+}
+
+// Img responsive
+@mixin img-responsive {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+// Clearfix
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// Placeholders
+@mixin placeholder ($placeholder-color) {
+	&::-webkit-input-placeholder {
+		color: $placeholder-color;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	&::-moz-placeholder {
+		color: $placeholder-color;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	&:-moz-placeholder {
+		color: $placeholder-color;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	&:-ms-input-placeholder {
+		color: $placeholder-color;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	&:focus::-webkit-input-placeholder {
+		opacity: 0;
+	}
+	&:focus::-moz-placeholder {
+		opacity: 0;
+	}
+	&:focus:-moz-placeholder {
+		opacity: 0;
+	}
+	&:focus:-ms-input-placeholder {
+		opacity: 0;
+	}
+}

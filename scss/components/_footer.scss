@@ -1,0 +1,40 @@
+.footer {
+	text-align: center;
+
+	a {
+		color: $bg-main;
+		text-decoration: underline;
+		transition: .3s ease-out;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&-top {
+		padding-top: 10%;
+
+		@include screen-sm {
+			text-align: left;
+		}
+
+		br {
+			@include screen-sm {
+				display: none;
+			}
+		}
+
+		a {
+			&:last-child {
+				@include screen-sm {
+					margin-left: 5%;
+					float: right;
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	margin: 3% auto;
+}

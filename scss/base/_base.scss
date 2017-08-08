@@ -1,0 +1,105 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	background: #f9f9f9;
+	color: $color-primary;
+	font: 18px/1.5 'Open Sans', Arial, Helvetica, sans-serif;
+
+	@include screen-sm {
+		font-size: 21px;
+	}
+
+	@include screen-md {
+		font-size: 24px;
+	}
+}
+
+a {
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.large-text {
+	font-size: larger;
+}
+
+.small-text {
+	font-size: smaller;
+}
+
+.section-title {
+	margin: 5% auto;
+	font: 20px 'Montserrat', Arial, Helvetica, sans-serif;
+
+	@include screen-sm {
+		font-size: 28px;
+	}
+
+	@include screen-md {
+		font-size: 33px;
+	}
+
+	&--larger {
+		font-size: 23px;
+
+		@include screen-sm {
+			font-size: 31px;
+		}
+
+		@include screen-md {
+			font-size: 35px;
+		}
+	}
+
+	&--smaller {
+		font-size: 18px;
+
+		@include screen-sm {
+			font-size: 25px;
+		}
+
+		@include screen-md {
+			font-size: 30px;
+		}
+	}
+}
+
+.content,
+.footer {
+	.container {
+		padding: 1% 15px;
+		background: #fff;
+
+		@include screen-sm {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		@include screen-md {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+}
