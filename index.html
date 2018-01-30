@@ -1,211 +1,411 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>Why do we use it?</title>
-	<link rel="stylesheet" href="css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-video">
+      <video autoplay muted loop playsinline>
+        <source src="video/shutterstock_v12702446.webm" type="video/webm" />
+        <source src="video/shutterstock_v12702446.mp4" type="video/mp4" />
+        <source src="video/shutterstock_v12702446.ogv" type="video/ogg" />
+      </video>
+    </div>
+    <div class="header-top">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="">
+        </a>
+        <img src="images/img-sticker.png" class="header-top-sticker" alt="">
+      </div>
+    </div>
+    <div class="header-inner">
+      <div class="container">
+        <h1 class="page-title">Young Professionals <span>Canada is Waiting For You!</span></h1>
 
-	<header class="header">
-		<div class="container">
-			<h1 class="page-title">Why do we use it?</h1>
-		</div>
-	</header>
+        <div class="header-form">
+          <div class="header-form-inner">
+              <h3 class="header-form-title">Take the first step towards your Canadian Visa</h3>
 
-	<main class="content">
-		<div class="container">
+              <form action="#">
+                <div class="header-form-line">
+                  <input id="full_name" maxlength="40" name="full_name" size="20" type="text" placeholder="Full Name">
+                </div>
+                <div class="header-form-line">
+                  <input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="Email">
+                </div>
+                <div class="header-form-line">
+                  <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Phone Number">
+                </div>
+                <div class="header-form-line">
+                  <select id="country_code" name="country_code">
+                    <option value="">Country</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Aland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia, Plurinational State of</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="TW">Chinese Taipei</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, the Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Cote d&#39;Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and McDonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People&#39;s Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People&#39;s Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libyan Arab Jamahiriya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Reunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthélemy</option>
+                    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin (French part)</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten (Dutch part)</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                  </select>
+                </div>
+                <div class="header-form-line">
+                  <input type="checkbox" id="agree" name="agree" value="">
+                  <label for="agree">I agree with the terms of use & privacy policy</label>
+                </div>
+                <button class="btn" type="submit">Get Started Now!</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-			<section class="section-top">
-				<h2 class="section-title">Why do we use it?</h2>
-				<h2 class="section-title section-title--larger"><strong>Lorem ipsum</strong></h2>
-				<div class="line">
-					<!-- <div class="img-holder text-center">
-						<img src="img/img-upc.jpg" alt="">
-					</div> -->
-					<div class="text-holder">
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-					</div>
-				</div>
-			</section>
 
-			<section class="section-problem">
-				<h2 class="section-title text-center"><strong>Lorem ipsum</strong></h2>
-				<div class="line small-text">
-					<div class="text-holder">
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-					</div>
-				</div>
-				<h2 class="section-title text-center">Lorem ipsum</h2>
-				<div class="line">
-					<div class="text-holder">
-						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-					</div>
-					<!-- <div class="img-holder text-center">
-						<img src="img/img-book-main.png" alt="">
-					</div> -->
-				</div>
-			</section>
+  <main class="content">
+    <section class="career">
+      <div class="container">
+        <div class="career-inner">
+          <h3 class="career-title">Are you looking for a great new career opportunity in a beautiful and friendly country?</h3>
+          <div class="career-text">
+            <p>With a growing economy, Canada is actively looking for young, talented people like you to diversify its work-force!</p>
+          </div>
+        </div>
+        <div class="career-sticker">
+          <img src="images/img-sticker.png" alt="">
+        </div>
+      </div>
+    </section>
 
-			<section class="section-about-me">
-				<h2 class="section-title section-title--smaller text-center"><strong>Where does it come from?</strong></h2>
-				<div class="line">
-					<div class="text-holder small-text">
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-					</div>
-					<div class="text-holder">
-						<p>f you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-					</div>
-					<div class="text-holder small-text">
-						<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-					</div>
-				</div>
-			</section>
+    <section class="description">
+      <div class="container">
+        <h2 class="description-title">Open the Door to a New Life</h2>
+        <div class="description-inner">
+          <p>Canada is one of the top 10 economies in the world, the fastest growing economy of all G7 countries.<br/>
+          This guarantees a constant demand for well talented people like you.<br/>
+          Home of global hi-tech corporations, with flourishing oil & gas and financial industries and well developed education, health and service sectors, the country offers a wealth of exciting career opportunities in every field.<br/>
+          Boasting one of the developed world's highest Standards of Living (with one of the lowest Costs of Living)<br/>
+          Canada provides a wide range of ways to make immigration easy.<br/>
+          Built on the values of equality, diversity and respect for the individual, Canada's multicultural society is the perfect place to grow.</p>
+          <strong class="description-inner-slogan">Start Your Journey to Canada Today!</strong>
+        </div>
+        <a href="#" class="btn">Get Started Now!</a>
+      </div>
+    </section>
 
-			<section class="section-about-book">
-				<h2 class="section-title text-center">What is Lorem Ipsum?</h2>
-				<!-- <div class="img-holder text-center">
-					<img src="img/arrow-down.png" alt="">
-				</div> -->
-				<div class="line">
-					<ul class="checked-list">
-						<li><strong>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</strong></li>
-						<li>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-						<li><strong>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</strong></li>
-						<li>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</li>
-						<li><strong>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</strong></li>
-						<li>Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-					</ul>
-				</div>
-			</section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-img">
+          <img src="images/img-testimonials.png" alt="">
+        </div>
+        <h4 class="testimonials-name">Rahul Mengal</h4>
+        <div class="testimonials-text">
+          <p>I'm a young software engineer from India now happily living and working in Vancouver. I received my work permit through Express Entry Visa – Young professionals category, and was amazed at how many great companies wanted me to come work for them.<br/>My future has never looked brighter!</p>
+        </div>
+      </div>
+    </section>
 
-			<section class="section-bonuses">
-				<h2 class="section-title text-center">Lorem ipsum</h2>
-				<div class="img-holder text-center">
-					<img src="img/arrow-down.png" alt="">
-				</div>
-				<div class="line">
-					<div class="bonuses-inner">
-						<div class="bonuses-item">
-							<div class="bonus-number text-center">Ipsum 10</div>
-							<div class="bonus-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente non obcaecati ad, cumque culpa temporibus, ipsa libero, fuga repudiandae sunt amet distinctio, accusamus facilis natus? Aperiam maiores quo at assumenda.
-							</div>
-						</div>
-						<div class="bonuses-item">
-							<div class="bonus-number text-center">Ipsum 20</div>
-							<div class="bonus-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero, at dolorum accusantium quas commodi labore corporis, eveniet cupiditate dicta pariatur. Assumenda eius explicabo quam, voluptates laboriosam nam suscipit nulla.
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <section class="advantages">
+      <div class="advantages-inner">
+        <div class="advantages-item">
+          <div class="advantages-img">
+            <img src="images/img-leaf.png" alt="">
+          </div>
+          <div class="advantages-text">
+            <p>“Canada now claims the world’s most prosperous and successful immigrant population” <span>NY Times. June 28, 2017</span></p>
+          </div>
+        </div>
+        <div class="advantages-item">
+          <div class="advantages-img">
+            <img src="images/img-leaf.png" alt="">
+          </div>
+          <div class="advantages-text">
+            <p>Ranked in top 3 countries<br/>to live in by UN</p>
+          </div>
+        </div>
+        <div class="advantages-item">
+          <div class="advantages-img">
+            <img src="images/img-leaf.png" alt="">
+          </div>
+          <div class="advantages-text">
+            <p>Economy among Top 10 in the world fastest growing of G7</p>
+          </div>
+        </div>
+        <div class="advantages-item">
+          <div class="advantages-img">
+            <img src="images/img-leaf.png" alt="">
+          </div>
+          <div class="advantages-text">
+            <p>Open society, home to over 200 different ethnic communities</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<section class="section-books-content">
-				<h2 class="section-title text-center">Lorem ipsum</h2>
-				<!-- <div class="img-holder text-center">
-					<img src="img/img-book.jpg" alt="">
-				</div> -->
-				<div class="line">
-					<ul class="books-content-list">
-						<li><strong>Lorem ipsum</strong>
-							<ul class="books-content-sublist">
-								<li>Lorem ipsum</li>
-							</ul>
-						</li>
-						<li><strong>dolor sit amet</strong>
-							<ul class="books-content-sublist">
-								<li>consectetur adipisicing elit</li>
-								<li><strong>Assumenda, soluta distinctio</strong></li>
-								<li>Aliquam voluptas quidem cum omnis quasi</li>
-								<li><strong>repellat eaque iusto saepe</strong></li>
-								<li>optio laborum quia rem numquam laboriosam </li>
-								<li> doloremque iste. Quod.</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</section>
+  </main>
 
-			<section class="section-cost">
-				<!-- <div class="img-holder text-center">
-					<img src="img/arrow-down.png" alt="">
-				</div> -->
-				<h2 class="section-title text-center">Lorem ipsum</h2>
-				<div class="line small-text">
-					<div class="text-holder text-center">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente qui voluptates nihil itaque fugiat eius magnam aliquam! Praesentium eveniet inventore maiores, accusamus quae tempore. Delectus quia reiciendis, reprehenderit iusto cum.</p>
-					</div>
-				</div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="footer-top-logo footer-top-item">
+          <img src="images/logo-footer.png" alt="">
+        </a>
+        <div class="footer-top-item">
+          <span>10665 JASPER AVENUE,</span>
+          <span>Edmonton, Alberta,</span>
+          <span>T5J 3S9, Canada</span>
+        </div>
+        <div class="footer-top-item">
+          <span><a href="tel:+16479511500">+1-647-951-1500</a></span>
+          <span><a href="mailto:Support@uiscanada.com">Support@uiscanada.com</a></span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright-top">Copyright &copy; 2017</div>
+        <div class="copyright-bottom">All rights reserved to U.M.C Ltd. Düsseldorf, Unternehmerstadt, Johannstrasse 37, 3rd floor, Dusseldorf, 40476, Germany</div>
+      </div>
+    </div>
+  </footer>
 
-				<div class="cost-holder">
-
-					<div class="cost-item cost-item-optimal">
-						<h4 class="cost-item-title optimal">tempore corporis</h4>
-						<div class="cost-item-text">
-							mollitia est eum quibusdam ex neque eligendi
-						</div>
-						<div class="cost-item-text">
-							consectetur adipisicing elit. Libero, ea! Hic placeat dicta
-						</div>
-						<div class="cost-item-text">
-							Lorem ipsum dolor sit amet  magnam deserunt 
-						</div>
-						<div class="price">500</div>
-						<a href="#" class="btn btn-optimal">Lorem</a>
-					</div>
-
-					<div class="cost-item cost-item-optimal">
-						<h4 class="cost-item-title optimal">tempore corporis</h4>
-						<div class="cost-item-text">
-							mollitia est eum quibusdam ex neque eligendi
-						</div>
-						<div class="cost-item-text">
-							consectetur adipisicing elit. Libero, ea! Hic placeat dicta
-						</div>
-						<div class="cost-item-text">
-							Lorem ipsum dolor sit amet  magnam deserunt 
-						</div>
-						<div class="price">500</div>
-						<a href="#" class="btn btn-optimal">Lorem</a>
-					</div>
-
-				</div>
-
-				<div class="line small-text">
-					<div class="text-holder">
-						<p></p>
-					</div>
-				</div>
-
-				<div class="line">
-					<div class="slogan">
-						<p>lorem ipsum</p>
-					</div>
-					<div class="text-holder small-text">
-						<p><ins>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia esse, saepe dolorem deleniti, illum pariatur aut voluptate, necessitatibus magnam itaque eius? Vero officiis magni ea ut repellat ad delectus fuga.</ins></p>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</main>
-
-	<!-- <footer class="footer small-text">
-		<div class="container">
-			<div class="footer-top">
-				<a href="http://vsbot.ru/politika-konfidentcialnocti" class="footer-top-item footer-top-item--left">Политика конфиденциальности</a>
-				<br>
-				<a href="#" class="footer-top-item footer-top-item--right">Партнерская программа 50%</a>
-			</div>
-			<div class="copyright">&copy; <a href="http://vsbot.ru/">Виктор Геронда</a>, 2017. Все права защищены.</div>
-			<div class="footer-letter"><a href="http://vsbot.ru/kontakt">Написать мне письмо.</a></div>
-		</div>
-	</footer> -->
-
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/iphone-inline-video.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
