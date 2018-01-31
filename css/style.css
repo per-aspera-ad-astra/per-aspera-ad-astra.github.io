@@ -1286,7 +1286,12 @@ input::-ms-clear {
 }
 
 .testimonials-img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 260px;
   margin-bottom: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
