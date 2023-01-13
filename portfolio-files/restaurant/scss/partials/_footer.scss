@@ -1,0 +1,65 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #191919;
+  color: #fff;
+  font-family: $font-form;
+  text-align: center;
+
+  @include screen(lg) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    font-size: 18px;
+
+    @include screen(lg) {
+      font-size: 21px;
+    }
+  }
+
+  &__about,
+  &__schedule {
+    margin-bottom: 30px;
+
+    @include screen(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__schedule,
+  &__location {
+    @include screen(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__about {
+    &-text {
+      max-width: 375px;
+      margin: 0 auto;
+    }
+  }
+
+  &__schedule {
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__location {
+    &-address {
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+}

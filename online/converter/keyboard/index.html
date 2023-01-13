@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Keyboard transliteration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Keyboard transliteration</h1>
+    <div class="inner">
+      <div class="inner-item">
+        <h4>From Lat to Cyr</h4>
+        <textarea name="translit2" id="" cols="30" rows="3" placeholder="Latin Symbols"></textarea>
+        <button onclick="translitRevers();" type="submit">Convert</button>
+        <textarea name="result2" id="" cols="30" rows="3" placeholder="Result"></textarea>
+      </div>
+       <div class="inner-item">
+        <h4>From Cyr to Lat</h4>
+        <textarea name="translit" id="" cols="30" rows="3" placeholder="Russian symbols"></textarea>
+        <button onclick="translit();" type="submit">Convert</button>
+        <textarea name="result" id="" cols="30" rows="3" placeholder="Result"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.about {
+  padding: 25px 0;
+  background: #f2f2f2 url(../images/bg-about.jpg) center/cover no-repeat;
+
+  @include screen(md) {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+
+  .container {
+    @include screen(md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    @include screen(md) {
+      width: 75%;
+    }
+
+    @include screen(lg) {
+      width: 50%;
+      margin-right: 5%;
+    }
+
+    @include screen(xl) {
+      width: 40%;
+    }
+  }
+
+  &__inner {
+    margin-bottom: 20px;
+    text-align: center;
+
+    &-img {
+      max-width: 80%;
+      margin: 0 auto;
+      padding-left: 17%;
+    }
+
+    &-content {
+      max-width: 430px;
+      margin: 0 auto 25px;
+
+      @include screen(lg) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__image {
+    text-align: center;
+  }
+}

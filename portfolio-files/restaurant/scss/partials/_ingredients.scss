@@ -1,0 +1,40 @@
+.ingredients {
+  background: #202528 url(../images/bg-ingredients.jpg) center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+
+  &__inner {
+    padding: 40px 30px;
+    background: rgba(0,0,0,0.5);
+
+    @include screen(md) {
+      padding: 60px 40px;
+    }
+
+    @include screen(xl) {
+      padding: 75px 70px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    @include screen(md) {
+      margin-bottom: 50px;
+    }
+
+    @include screen(xl) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-item {
+      width: 27%;
+    }
+  }
+}

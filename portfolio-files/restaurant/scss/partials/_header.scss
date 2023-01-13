@@ -1,0 +1,135 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: $bg-main;
+  color: #fff;
+  font: bold 21px/1.15 $font-header;
+
+  @include screen(lg) {
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0));
+  }
+
+  &.sticky {
+    background: $bg-main;
+
+    .logo {
+      @include screen(lg) {
+        max-width: 80px;
+      }
+    }
+
+    .navigation__item {
+      a {
+        @include screen(lg) {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// logo
+.logo {
+  display: inline-block;
+  max-width: 20%;
+  transition: max-width 0.3s;
+}
+
+// Navigation
+.navigation {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: $bg-main;
+  text-align: center;
+  text-transform: capitalize;
+
+  @include screen(lg) {
+    display: block !important;
+    width: auto;
+    position: static;
+    background: transparent;
+    margin-left: auto;
+  }
+
+  &__list {
+    @include screen(lg) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  &__item {
+    a {
+      position: relative;
+      display: block;
+      padding: 15px 10px;
+      transition: 0.3s;
+
+      @include screen(lg) {
+        padding: 45px 12px; 
+        border-top: 3px solid transparent;
+      }
+
+      &:hover {
+        @include screen(lg) {
+          border-top-color: rgba(255,255,255, 0.71);
+        }
+      }
+    }
+  }
+}
+
+// Burger
+.burger {
+  position: relative;
+  display: inline-block;
+  width: 21px;
+  height: 15px;
+  margin-left: 18px;
+  background: transparent;
+  border: 0;
+
+  @include screen(lg) {
+    display: none;
+  }
+
+  span,
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+  }
+
+  span {
+    top: 6px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    top: 0;
+  }
+
+  &::after {
+    top: 12px;
+  }
+}

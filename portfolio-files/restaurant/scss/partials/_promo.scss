@@ -1,0 +1,97 @@
+.promo {
+  padding: 25% 0 20%;
+  background: url(../images/bg-promo.jpg) center/cover no-repeat;
+
+  @include screen(md) {
+    padding: 15% 0 10%;
+  }
+
+  @include screen(xl) {
+    padding: 10% 0 7%;
+  }
+
+  &__title {
+    position: relative;
+    padding-bottom: 60px;
+    color: rgba(255,255,255,0.92);
+    font: 30px/1.4 $font-titles;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    
+    @include screen(sm) {
+      font-size: 40px;
+    }
+
+    @include screen(md) {
+      font-size: 60px;
+    }
+
+    @include screen(lg) {
+      font-size: 75px;
+    }
+
+    @include screen(xl) {
+      font-size: 90px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 232px;
+      height: 43px;
+      background: url(../images/icon-divider-promo.png) no-repeat;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include screen(sm) {
+      flex-direction: row;
+    }
+
+    &-item {
+      width: 230px;
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      border-width: 1px;
+      border-style: solid;
+      transition: 0.3s;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+
+        @include screen(sm) {
+          margin-bottom: 0;
+          margin-right: 30px;
+        }
+      }
+
+      &_primary {
+        background: rgba(0,0,0,0.5);
+        border-color: rgba(0,0,0,0.8);
+
+        &:hover {
+          background:rgba(0,0,0,0.8);
+        }
+      }
+      &_secondary {
+        background: rgba(255,255,255,0.3);
+        border-color: rgba(255,255,255,0.8);
+
+        &:hover {
+          background:rgba(255,255,255,0.6);
+        }
+      }
+    }
+  }
+}

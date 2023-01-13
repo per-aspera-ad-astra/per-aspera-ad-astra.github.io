@@ -1,0 +1,135 @@
+.reservations {
+  background: #f2f2f2 url(../images/bg-about.jpg) center/cover no-repeat;
+
+  &__images {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    @include screen(xl) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include screen(md) {
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin: 0 0 15px;
+
+      @include screen(lg) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__form {
+    &-inner {
+      font: 14px/1.15 $font-form;
+      color: #7c7c7c;
+
+      @include screen(sm) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @include screen(lg) {
+        font-size: 16px;
+      }
+    }
+
+    &-item {
+      max-width: 250px;
+      margin-bottom: 25px;
+
+      @include screen(sm) {
+        width: calc(50% - 15px);
+      }
+
+      &:nth-child(odd) {
+        @include screen(sm) {
+          margin-right: 30px;
+        }
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: $color-title;
+        font-weight: 700;
+        font-size: 12px;
+
+        @include screen(lg) {
+          font-size: 14px;
+        }
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 8px 16px;
+        background: rgba(255,255,255,0.4);
+        color: inherit;
+        font: inherit;
+        border: 1px solid #c8c6c6;
+        outline: 0;
+
+        &:focus {
+          border-color: #c89f2d;
+        }
+
+        @include placeholder(inherit, 0);
+      }
+
+      select {
+        appearance: none;
+        background-image: url(../images/icon-select.png);
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+      }
+
+      @at-root .input-date-holder {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 13px;
+          height: 14px;
+          background: url(../images/icon-date.png) no-repeat;
+        }
+
+        input[type="text"] {
+          padding-right: 30px;
+        }
+      }
+    }
+
+    &-btn {
+      width: 200px;
+      margin-top: 10px;
+      padding: 10px;
+      background: $color-title;
+      color: #fff;
+      border: 0;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: darken($color-title, 5%);
+      }
+    }
+  }
+}

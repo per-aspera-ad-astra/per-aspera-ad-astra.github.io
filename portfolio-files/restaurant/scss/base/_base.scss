@@ -1,0 +1,103 @@
+body {
+  font: 14px/1.5 $font-base;
+  color: $color-font;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  $header-social-color: #dab33e;
+  &_header {
+    display: none;
+    margin-left: 15px;
+
+    color: $header-social-color;
+
+    @include screen(xl) {
+      display: block;
+    }
+
+    .social__item {
+      &:hover {
+        color: darken($header-social-color, 10%);
+      }
+    }
+  }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include screen(md) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  @include screen(xl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.section-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 45px;
+  font: 24px/1.15 $font-titles;
+  text-align: center;
+
+  @include screen(md) {
+    font-size: 30px;
+  }
+
+  @include screen(xl) {
+    font-size: 36px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 210px;
+    height: 21px;
+
+    @include screen(xl) {
+      width: 247px;
+      height: 24px;
+    }
+  }
+
+  &_orange {
+    color: $color-title;
+
+    &::before {
+      background: url(../images/icon-divider-orange.png) center/contain no-repeat;
+    }
+  }
+
+  &_white {
+    color: #fff;
+
+    &::before {
+      background: url(../images/icon-divider-white.png) center/contain no-repeat;
+    }
+  }
+}

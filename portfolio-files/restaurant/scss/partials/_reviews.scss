@@ -1,0 +1,53 @@
+.reviews {
+  background: url(../images/bg-reviews.jpg) center/cover no-repeat;
+  color: #dde0df;
+  text-align: center;
+
+  &__inner {
+    padding: 35px 20px;
+    background: rgba(0,0,0,0.5);
+
+    @include screen(md) {
+      padding: 60px 40px;
+    }
+
+    @include screen(xl) {
+      padding: 80px 70px 90px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin: 0 0 20px;
+    font: 18px/1.8 $font-titles;
+
+    @include screen(md) {
+      font-size: 21px;
+    }
+
+    @include screen(xl) {
+      margin-bottom: 35px;
+      font-size: 25px;
+    }
+
+    &::before {
+      @include screen(md) {
+        content: '';
+        position: absolute;
+        right: 100%;
+        bottom: calc(100% - 15px);
+        width: 32px;
+        height: 25px;
+        background: url(../images/icon-quote.png) no-repeat; 
+      }
+    }
+  }
+
+  &__author   {
+    font-size: 16px;
+
+    @include screen(md) {
+      font-size: 18px;
+    }
+  }
+}
