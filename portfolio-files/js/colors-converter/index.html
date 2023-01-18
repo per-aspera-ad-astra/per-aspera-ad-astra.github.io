@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Colors Converter</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1 class="title">Colors Converter</h1>
+		<div class="item">
+			<h2 class="item-title">HEX to RGB</h2>
+			<form id="hex-to-rgb-form" class="input">
+				<input class="input-field" id="hex-to-rgb-input" type="text" placeholder="e.g. #000000; #fff; fafafa">
+				<button class="input-btn" type="submit">Convert</button>
+				<span class="input-error" id="hex-to-rgb-error"></span>
+			</form>
+			<div class="output">
+				<input class="output-field" id="hex-to-rgb-output" type="text">
+				<button class="output-btn" id="hex-to-rgb-copy">Copy to clipboard</button>
+			</div>
+			<div class="preview">
+				<strong class="preview-text">Preview</strong>
+				<div id="hex-to-rgb-preview" class="preview-field"></div>
+			</div>
+		</div>
+		<div class="item">
+			<h2 class="item-title">RGB to HEX</h2>
+			<form id="rgb-to-hex-form" class="input">
+				<div class="input-field input-multiple-fields">
+					<div class="input-field-item">
+						<label class="input-label" for="rgb-to-hex-input-r">Red</label>
+						<input id="rgb-to-hex-input-r" maxlength="3" type="text" placeholder="0-255">
+					</div>
+					<div class="input-field-item">
+						<label class="input-label" for="rgb-to-hex-input-g">Green</label>
+						<input id="rgb-to-hex-input-g" maxlength="3" type="text" placeholder="0-255">
+					</div>
+					<div class="input-field-item">
+						<label class="input-label" for="rgb-to-hex-input-r">Blue</label>
+						<input id="rgb-to-hex-input-b" maxlength="3" type="text" placeholder="0-255">
+					</div>
+				</div>
+				<button class="input-btn" type="submit">Convert</button>
+				<span class="input-error" id="rgb-to-hex-error"></span>
+			</form>
+			<div class="output">
+				<input class="output-field" id="rgb-to-hex-output" type="text">
+				<button class="output-btn" id="rgb-to-hex-copy">Copy to clipboard</button>
+			</div>
+			<div class="preview">
+				<strong class="preview-text">Preview</strong>
+				<div id="rgb-to-hex-preview" class="preview-field"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
